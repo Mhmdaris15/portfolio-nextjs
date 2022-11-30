@@ -7,7 +7,11 @@ type Props = {}
 const Header = (props: Props) => {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-10 xl:items-center'>
-        <motion.div className='flex flex-row items-center'>
+        <motion.div
+        initial={{ opacity: 0, x: -500 }}
+        animate={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
+        
+        className='flex flex-row items-center'>
             {/* Social Icons */}
             <SocialIcon url="https://github.com/mhmdaris15" 
             fgColor='gray'
@@ -31,10 +35,13 @@ const Header = (props: Props) => {
             />
         </motion.div>
 
-        <div className='flex flex-row items-center text-gray-300 cursor-pointer'>
+        <motion.div
+        initial={{ opacity: 0, x: 500 }}
+        animate={{ opacity:1, x:0, transition: { duration: 0.8 } }}
+        className='flex flex-row items-center text-gray-300 cursor-pointer'>
             <SocialIcon className='cursor-pointer' network='email' fgColor='gray' bgColor='transparent'/>
             <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>get in touch</p>
-        </div>
+        </motion.div>
     </header>
   )
 }
