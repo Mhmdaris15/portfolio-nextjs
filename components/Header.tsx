@@ -11,27 +11,32 @@ const Header = (props: Props) => {
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
         
-        className='flex flex-row items-center'>
+        className='flex flex-row items-center sm:gap-x-3'>
             {/* Social Icons */}
             <SocialIcon url="https://github.com/mhmdaris15" 
             fgColor='gray'
             bgColor='transparent'
+            className='hover:bg-yellow-400 transition-all rounded-full ease-out duration-300'
             />
             <SocialIcon url="https://instagram.com/mhmdaris15" 
             fgColor='gray'
             bgColor='transparent'
+            className='hover:bg-yellow-400 transition-all rounded-full ease-out duration-300'
             />
             <SocialIcon url="https://twitter.com/mhmdaris15"
             fgColor='gray'
             bgColor='transparent'
+            className='hover:bg-yellow-400 transition-all rounded-full ease-out duration-300'
             />
             <SocialIcon url="https://reddit.com/mhmdaris15" 
             fgColor='gray'
             bgColor='transparent'
+            className='hover:bg-yellow-400 transition-all rounded-full ease-out duration-300'
             />
             <SocialIcon url="https://linkedin.com/muhammad-aris-septanugroho" 
             fgColor='gray'
             bgColor='transparent'
+            className='hover:bg-yellow-400 transition-all rounded-full ease-out duration-300'
             />
         </motion.div>
 
