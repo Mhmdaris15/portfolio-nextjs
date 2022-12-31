@@ -3,7 +3,7 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import Image from 'next/image'
 import Link from 'next/link'
-import profileImage from '../public/img/aris-nevtik.jpg'
+import { profileImage } from './AllImages'
 
 type Props = {}
 
