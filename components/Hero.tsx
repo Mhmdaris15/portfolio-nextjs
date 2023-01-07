@@ -27,7 +27,7 @@ const Hero = (props: Props) => {
     return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles />
-        <Image className='rounded-full object-cover w-64 h-64' src={profileImage} alt="Muhammad Aris" width={300} height={300} />
+        <Image className='rounded-full object-cover w-64 h-64 z-20' src={profileImage} alt="Muhammad Aris" width={300} height={300} />
         <h2 className='text-sm text-gray-600 uppercase tracking-[15px]'>Software Engineer</h2>
         <h1 className='text-xl'>
             <span className=''>{text}</span>
